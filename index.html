@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#home" class="logo">
+            abhi.
+        </a>
+
+        <button id="open-sidebar-button" onclick="openSidebar()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="navbar">
+            <ul>
+                <li><button id="close-sidebar-button" onclick="closeSidebar()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button></li>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li>
+                    <button id="resume-btn">
+                        Resume
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="overlay" onclick="closeSidebar()"></div>
+    </section>
+
+
+    <section id="about">
+        <h2 class="title">ABOUT ME</h2>
+        <div class="about-info">
+            <img src="./imgs/img2.JPG" alt="Abhishek Prajapati" />
+            <div class="about-details">
+                <h2>MYSELF</h2>
+                <p>
+                    Hi, I'm Abhishek Prajapati, a recent graduate in Computer Science Engineering from MIT ADT
+                    University.
+                    During my studies, I discovered a strong interest in web development and UI/UX design, which I
+                    actively explored
+                    through self-learning, certifications, and hands-on projects.
+                </p>
+                <div class="about-extra">
+                    <div class="edu">
+                        <h3>EDUCATION</h3>
+                        <div class="edu-box">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h4>MIT ADT University</h4>
+                            <div class="edu-date">
+                                <h4>2021-25</h4>
+                            </div>
+                        </div>
+                        <div class="edu-box">
+                            <i class="fa-solid fa-school"></i>
+                            <h4>Sinhgard City School</h4>
+                            <div class="edu-date">
+                                <h4>2020</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h3>SKILLS</h3>
+                        <div class="skills-grid">
+                            <div class="placeholder skill-box">
+                                <i class="fa-brands fa-java"></i>
+                                <h4>75%</h4>
+                            </div>
+                            <div class="placeholder skill-box">
+                                <i class="fa-brands fa-js"></i>
+                                <h4>75%</h4>
+                            </div>
+                            <div class="placeholder skill-box">
+                                <i class="fa-brands fa-react"></i>
+                                <h4>75%</h4>
+                            </div>
+                            <div class="placeholder skill-box">
+                                <i class="fa-brands fa-node"></i>
+                                <h4>60%</h4>
+                            </div>
+                            <div class="placeholder skill-box">
+                                <i class="fa-brands fa-html5"></i>
+                                <h4>80%</h4>
+                            </div>
+                            <div class="placeholder skill-box">
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <h4>80%</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="title">RECENT PROJECT</h2>
+        <div class="proj">
+            <div class="proj-info">
+                <img src="./imgs/proimg1.jpg" alt="">
+                <div class="proj-deatils">
+                    <h3>Crosscan: Reflected XSS Scanner</h3>
+                    <p>
+                        Built a Reflected XSS vulnerability scanner using MERN stack. Crosscan detects and reports
+                        potential reflected XSS flaws in web applications by injecting custom payloads and analyzing
+                        server responses in real-time. Designed with a clean React + TailwindCSS interface for
+                        efficient
+                        and user-friendly scanning.
+                    </p>
+                    <div class="proj-know-more">
+                        <i class="fa-brands fa-github"></i>
+                        <button>know More...</button>
+                    </div>
+                </div>
+            </div>
+            <div class="proj-info">
+                <img src="./imgs/proimg2.jpg" alt="">
+                <div class="proj-deatils">
+                    <h3>Crosscan: Reflected XSS Scanner</h3>
+                    <p>
+                        Built a Reflected XSS vulnerability scanner using MERN stack. Crosscan detects and reports
+                        potential reflected XSS flaws in web applications by injecting custom payloads and analyzing
+                        server responses in real-time. Designed with a clean React + TailwindCSS interface for
+                        efficient
+                        and user-friendly scanning.
+                    </p>
+                    <div class="proj-know-more">
+                        <i class="fa-brands fa-github"></i>
+                        <button>know More...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <div class="cont-text">
+            <h2>Let's Make</h2>
+            <h2>Something</h2>
+            <h2>Special</h2>
+        </div>
+        <img src="https://media1.giphy.com/media/pzvUEkOeAViy7VS7B6/giphy.gif" alt="Cat GIF" class="silly-cat" />
+
+        <img src="https://media1.giphy.com/media/1URlthYDD9ZfNe68JT/giphy.gif" alt="Star Stick" class="star-stick" />
+
+        <img src="https://media2.giphy.com/media/5QTCH9HcixzA1STEs9/giphy.gif" alt="Smile Stick" class="smile-stick" />
+
+        <button class="btn-contact" id="openModal">
+            Contact
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
