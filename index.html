@@ -15,6 +15,7 @@
 
 <body>
 
+
     <section id="header">
         <a href="#home" class="logo">
             abhi.
@@ -115,6 +116,7 @@
     <section id="projects">
         <h2 class="title">RECENT PROJECT</h2>
         <div class="proj">
+
             <div class="proj-info">
                 <img src="./imgs/proimg1.jpg" alt="">
                 <div class="proj-deatils">
@@ -127,11 +129,43 @@
                         and user-friendly scanning.
                     </p>
                     <div class="proj-know-more">
-                        <i class="fa-brands fa-github"></i>
-                        <button>know More...</button>
+                        <a href="https://github.com/Saiken7/CrossScan-XSS-Vulnerability-Scanner">
+                            <i class="fa-brands fa-github-alt"></i>
+                        </a>
+                        <button id="openModal">know More...</button>
                     </div>
                 </div>
             </div>
+
+            <div class="modal" id="modal1" onclick="closemodalBtn(this)">
+                <div class="modal-inner" onclick="event.stopPropagation()">
+                    <img src="./imgs/proimg1.jpg" alt="">
+                    <div class="modal-inner-info">
+                        <h3>Crosscan: Reflected XSS Scanner</h3>
+                        <p>
+                            Built a Reflected XSS vulnerability scanner using MERN stack. Crosscan detects and reports
+                            potential reflected XSS flaws in web applications by injecting custom payloads and analyzing
+                            server responses in real-time. Designed with a clean React + TailwindCSS interface for
+                            efficient
+                            and user-friendly scanning.
+                        </p>
+
+                        <div class="language">
+                            <div class="language-box">React</div>
+                            <div class="language-box">Rest API</div>
+                            <div class="language-box">MongoDB</div>
+                            <div class="language-box">Node.js</div>
+                            <div class="language-box">Express.js</div>
+
+                        </div>
+                    </div>
+                </div>
+                <button id="closeModal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+
             <div class="proj-info">
                 <img src="./imgs/proimg2.jpg" alt="">
                 <div class="proj-deatils">
@@ -144,33 +178,65 @@
                         and user-friendly scanning.
                     </p>
                     <div class="proj-know-more">
-                        <i class="fa-brands fa-github"></i>
-                        <button>know More...</button>
+                        <a href="https://github.com/LuCiN080dy/malware_detection_website">
+
+                            <i class="fa-brands fa-github-alt"></i>
+                        </a>
+                        <button id="openModal">know More...</button>
                     </div>
                 </div>
             </div>
+
+            <div class="modal" id="modal2" onclick="closemodalBtn(this)">
+                <div class="modal-inner" onclick="event.stopPropagation()">
+                    <img src="./imgs/proimg2.jpg" alt="">
+                    <div class="modal-inner-info">
+                        <h3>Crosscan: Reflected XSS Scanner</h3>
+                        <p>
+                            Built a Reflected XSS vulnerability scanner using MERN stack. Crosscan detects and reports
+                            potential reflected XSS flaws in web applications by injecting custom payloads and analyzing
+                            server responses in real-time. Designed with a clean React + TailwindCSS interface for
+                            efficient
+                            and user-friendly scanning.
+                        </p>
+                    </div>
+                </div>
+                <button id="closeModal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
         </div>
     </section>
 
     <section id="Contact">
+
         <div class="cont-text">
             <h2>Let's Make</h2>
             <h2>Something</h2>
             <h2>Special</h2>
         </div>
+
+        <button>
+            Contact
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
         <img src="https://media1.giphy.com/media/pzvUEkOeAViy7VS7B6/giphy.gif" alt="Cat GIF" class="silly-cat" />
 
         <img src="https://media1.giphy.com/media/1URlthYDD9ZfNe68JT/giphy.gif" alt="Star Stick" class="star-stick" />
 
         <img src="https://media2.giphy.com/media/5QTCH9HcixzA1STEs9/giphy.gif" alt="Smile Stick" class="smile-stick" />
 
-        <button class="btn-contact" id="openModal">
-            Contact
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
-
     </section>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script.js"></script>
 </body>
 
