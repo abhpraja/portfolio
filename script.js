@@ -32,19 +32,6 @@ gsap.from(".proj-info", {
   }
 })
 
-// const openBtn = document.getElementById("openModal");
-// const closeBtn = document.getElementById("closeModal");
-// const modal = document.getElementById("modal");
-
-// openBtn.addEventListener("click", () => {
-//   modal.classList.add("open");
-// });
-
-// closeBtn.addEventListener("click", () => {
-//   modal.classList.remove("open");
-// })
-
-
 const openBtns = document.querySelectorAll("#openModal");
 const closeBtns = document.querySelectorAll("#closeModal");
 const modals = document.querySelectorAll(".modal");
@@ -64,21 +51,4 @@ closeBtns.forEach((btn, index) => {
 function closemodalBtn(modalElement) {
   modalElement.classList.remove("open");
 }
-
-
-//  const paths = document.querySelectorAll("#abhiLogo path");
-
-//   paths.forEach(path => {
-//     const length = path.getTotalLength();
-//     path.style.strokeDasharray = length;
-//     path.style.strokeDashoffset = length;
-//   });
-
-//   gsap.to("#abhiLogo path", {
-//     strokeDashoffset: 0,
-//     duration: 50,
-//     stagger: 0.2,
-//     ease: "power2.out"
-//   });
-
 
